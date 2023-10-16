@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Validation</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="assets/img/Saly-10.png" alt="" class="bgg">
+        <div class="main-div">
+            <form class="form">
+                <h3>Sign in</h3>
+                <div class="form-group">
+                    <input class="form-control email-phone" type="text" placeholder="" autocomplete="off" id="email-phone">
+                    <label class="form-label" for="email-phone">Email or phone number</label>
+                    <small>Error</small>
+                </div>
+                <div class="form-group">   
+                    <input class="form-control pass" type="password" placeholder="" autocomplete="off" id="pass">
+                    <label class="form-label" for="pass">Password</label>
+                    <i class="far fa-eye-slash show-pass"></i>
+                    <small>Error</small>
+                </div>
+                <div>
+                    <button class="btn submit">Sign in</button>
+                </div>
+                <p class="no-account">Don't have an account?<a href="sign-up.html">Sign up here</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/sign-in-validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+body{
+    font-family: Source Sans Pro;
+    /* background-color: #d1d1d1; */
+    background-image: linear-gradient(to bottom right, #FFFFFF, #5F2EC7);
+    position: relative;
+}
+
+.bgg{
+    bottom: 0;
+    left: 5rem;
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+}
+
+.main-div{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+@media (max-width: 992px) {
+    .main-div{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+    }
+}
+
+.form{
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 5px #6666662a;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form h3{
+    font-weight: 600;
+    text-align: center;
+}
+
+.form-group{
+    margin: 20px 0 30px 0;
+    position: relative;
+}
+
+.form-label{
+    margin: 2px 0;
+    color: #8b8b8b;
+    position: absolute;
+    left: 10px;
+    top: 11px;
+    background-color: white;
+    padding: 0 5px;
+    transition: 0.2s ease;
+}
+
+.form-control{
+    padding: 0 15px;
+    border: 1px solid #dddddd;
+    margin-bottom: 2px;
+    border-radius: 15px;
+    height: 50px;
+    z-index: 9999;
+}
+
+.form-control:focus{
+    outline: none;
+    box-shadow: 0 0 0 white;
+    border: 1px solid #8b8b8b;
+}
+
+.form-control:focus ~ .form-label, 
+.form-control:not(:placeholder-shown).form-control:not(:focus) ~ .form-label{
+    top: -13px;
+    transition: 0.2s ease;
+    font-size: 14px;
+    color: #8b8b8b;
+    background-color: none;
+}
+
+.form-group.error .form-control:focus ~ .form-label, 
+.form-group.error .form-control:not(:placeholder-shown).form-control:not(:focus) ~ .form-label{
+    color: #ff3c00;
+}
+
+.form-group.success .form-control:focus ~ .form-label, 
+.form-group.success .form-control:not(:placeholder-shown).form-control:not(:focus) ~ .form-label{
+    color: #8b8b8b;
+}
+
+.form-group.error .form-control{
+    border: 1px solid #ff3c00;
+}
+
+.form-group.success .form-control{
+    border: 1px solid #dddddd;
+}
+
+.form-group i.fas{
+    visibility: hidden;
+    position: absolute;
+    top: 17px;
+    right: 18px;
+}
+
+.form-group.success i.fa-check-circle{
+    color: green;
+    visibility: visible;
+}
+
+.form-group.error i.fa-exclamation-circle{
+    color: #ff3c00;
+    visibility: visible;
+}
+
+.form-group small{
+    color: #ff3c00;
+    position: absolute;
+    visibility: hidden;
+}
+
+.form-group.error small{
+    visibility: visible;
+}
+
+.submit{
+    width: 100%;
+    background-color: #8059D2;
+    color: #ffffff;
+    padding: 10px 15px;
+    margin: 30px 0;
+    border-radius: 15px;
+    height: 50px;
+}
+
+.submit.btn:hover{
+    background-color: #7c53d3;
+    color: #ffffff;
+}
+
+.no-account{
+    text-align: center;
+}
+
+.no-account a{
+    margin-left: 5px;
+    text-decoration: none;
+    color: #8059D2;
+}
+
+.no-account a:hover{
+    text-decoration: underline;
+}
+
+.form-group i.far{
+    visibility: hidden;
+    position: absolute;
+    top: 17px;
+    right: 18px;
+    color: #444444;
+}
